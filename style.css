@@ -56,3 +56,6 @@ body {
 .blue {
   background: blue;
 }
+.pressed {
+  border-color: gray;
+}
