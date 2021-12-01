@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lobster&family=Open+Sans:wght@300;500&family=Press+Start+2P&display=swap");
+
+:root {
+  --bg: #011f3f;
+  --box1-bg: green;
+  --box-margin: 25px;
+  --box-display: inline-block;
+  --box-height: 135px;
+  --box-width: 135px;
+  --box-border: 10px solid black;
+  --box-border-radius: 20%;
+}
+
+body {
+  background: var(--bg);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.heading {
+  font-family: "Press Start 2P", cursive;
+  font-size: 3rem;
+  margin: 5%;
+  color: #fef2bf;
+}
+.btn-group {
+  max-width: 375px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: space-evenly;
+}
+.btn {
+  margin: 15px;
+  display: var(--box-display);
+  height: var(--box-height);
+  width: var(--box-width);
+  border: var(--box-border);
+  border-radius: var(--box-border-radius);
+}
+.green {
+  background: green;
+}
+.red {
+  background: red;
+}
+.yellow {
+  background: yellow;
+}
+.blue {
+  background: blue;
+}
