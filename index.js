@@ -22,10 +22,7 @@ $("button").on("click", (e) => {
     checkAnswer();
   } else {
     playShound("wrong");
-    $("body").css("background-color", "red");
-    setTimeout(() => {
-      $("body").css("background-color", "#011f3f");
-    }, 160);
+    flashScreen();
   }
 });
 
@@ -75,7 +72,10 @@ function reset() {
   userPickedColors = [];
   level = 0;
   start = false;
-  $(".heading").text("Game Over!! Press ANy Key To Start");
+  $(".heading").html("Game Over!!<br />Press ANy Key To Start");
+  flashScreen();
+}
+function flashScreen() {
   $("body").css("background-color", "red");
   setTimeout(() => {
     $("body").css("background-color", "#011f3f");
